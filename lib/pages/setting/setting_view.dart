@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:news/core/utils/app_colors.dart';
 import 'package:news/core/utils/app_string.dart';
 import 'package:news/core/widget/background.dart';
-import 'widget/menu_widget.dart';
+import '../home/widget/menu_widget.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+
+class SettingView extends StatelessWidget {
+  const SettingView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: AppColors.primary,
         leading: const MenuWidget(),
-        title: const Text(AppString.appBarName,style: TextStyle(
+        title: const Text(AppString.setting,style: TextStyle(
           color: AppColors.white,
           fontSize: 24,
           fontWeight: FontWeight.bold,
